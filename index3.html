@@ -1,27 +1,57 @@
-<html>
-  <head>
-    <title>Code Editor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Mirror Editor</title>
+  <meta name="description" content="A simple live editor with very few lines of code.">
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@willian_justen">
+  <meta name="twitter:title" content="Simple Live Editor">
+  <meta name="twitter:description" content="A simple live editor with very few lines of code.">
+  <meta property="twitter:image:src" content="https://willianjusten.com.br/dumb-codepen/img/cover.png">
 
-  <body>
-    <textarea id="html" placeholder="HTML">
-  <html>
-  <head>
-    <title> </title>
-      </head>
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="fb:admins" content="1611244354" />
+  <meta property="og:title" content="Simple Live Editor">
+  <meta property="og:image" content="https://willianjusten.com.br/dumb-codepen/img/cover.png">
+  <meta property="og:description" content="A simple live editor with very few lines of code.">
 
-  <body>
-   </body>
-</html>
-<html>
-  </textarea>
-    <textarea id="css" placeholder="CSS"></textarea>
-    <textarea id="js" placeholder="JavaScript"></textarea>
-    <iframe id="code"></iframe>
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="css/style11.css">
+</head>
+<body>
+ 
+  <!-- Preview of the code -->
+  <iframe id="preview"></iframe>
 
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+  <!-- Editor Boxes -->
+  <div class="editor">
+
+    <textarea id="html" class="language-html">
+<h1>Hello World!</h1>
+    </textarea>
+
+    <textarea id="css" class="language-css">
+
+h1 {
+  color: black;
+  font-size: 72px;
+}
+
+
+    </textarea>
+
+    <textarea id="js" class="language-js">
+    </textarea>
+  </div>
+
+  <script src="js/prism.js"></script>
+  <script src="js/prism-highlight.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
